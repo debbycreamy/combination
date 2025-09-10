@@ -15,7 +15,7 @@ function getRandomGradient() {
   const color1 = getRandomColor();
   const color2 = getRandomColor();
   const angle = Math.floor(Math.random() * 360);
-  return `linear-gradient(${angle}deg, ${color1}, ${color2})`;
+  return `linear-gradient(${angle}90deg, ${color1}, ${color2})`;
 }
 
 let colorInterval = setInterval(() => {

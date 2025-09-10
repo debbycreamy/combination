@@ -157,8 +157,111 @@ console.log(nums);
 console.log(book.tittle);
 console.log(book.year);
 
+// classwork 2
+// number 7
+const fruits = ["mango", "orange", "banana"];
+console.log(fruits);
+fruits.push("watermelon")
+console.log(fruits);
+fruits.pop()
+fruits.unshift("apple");
+console.log(fruits);
+fruits.shift()
+console.log(fruits);
+
+// number 8
+let student = {
+  name: "john",
+  age: 30,
+  grade: 90,
+};
+console.log(student.name);
+
+// number 6
+
+// global variable 
+let x = 10;
+
+function testScope() {
+  // Local variable
+  let x = 20;
+  console.log("Inside the function, x =", x);
+}
+
+testScope();
+// without calling the function it will log the global variable alone REMEMBER
+console.log("Outside the function, x =", x);
+
+// number 5 
+function addNumbers(a, b) {
+  return a + b;
+}
+// document.getElementById("calculateSumBtn").addEventListener("click", () => {
+//   const firstNumber = parseFloat(document.getElementById("firstNumber").value);
+//   const secondNumber = parseFloat(document.getElementById("secondNumber").value);
+//   const resultMessage = document.getElementById("resultMessage");
+
+//   if (isNaN(firstNumber) || isNaN(secondNumber)) {
+//     resultMessage.textContent = "Please enter valid numbers.";
+//     return;
+//   }
+
+//   const sum = firstNumber + secondNumber;
+//   resultMessage.textContent = `The sum of ${firstNumber} and ${secondNumber} is ${sum}.`;
+// });
 
 
 
 
+
+let sum = addNumbers(10, 10);
+console.log("Sum:", sum);
+
+const num1 = parseInt(prompt("Enter first number:"));
+const num2 = parseInt(prompt("Enter second number:"));
+const result = addNumbers(num1, num2);
+alert("the sum of the two numbers is:" + result);
+
+// number 4
+function greet(name) {
+  return "Hello, " + name;
+}
+console.log(greet("Ada"));
+
+const greetArrow = (name) => {
+  return "Hello, " + name ;
+};
+console.log(greetArrow("debbie"));
+
+const greetExpr = function(name) {
+  return "Hello, " + name ;
+};
+console.log(greetExpr("creamy"));
+
+// number 3
+for (let p = 1; p <=10; p++){
+  console.log(p);
+}
+for (let p = 1; p <= 10; p++){
+  if (p % 2 === 0) 
+    console.log(p);
+  }
+
+  // number 1
+  
+  
+
+ // Ask the user for their first name and last name
+const firstName = prompt("Enter your first name:");
+const lastName = prompt("Enter your last name:");
+
+// (a) Using Concatenation
+
+const fullNameConcat = "Your full name is: " + firstName + " " + lastName;
+console.log(fullNameConcat);
+
+// (b) Using Template Literals
+const fullNameTemplate = `Your full name is: ${firstName} ${lastName}`;
+console.log(fullNameTemplate);
+  
 

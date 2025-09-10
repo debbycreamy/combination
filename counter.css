@@ -1,4 +1,4 @@
-h1{
+  h1{
     color:pink;
 }
 button {
@@ -12,14 +12,8 @@ button {
 }
 body{
     transition:  0.5s ease;
-    
 }
-.color-container{
-    padding: 60px;
-    border: 5px solid black;
-    border-radius: 20px;
-    justify-content: center;
-    background-color: pink;
-    align-items: center;               
+.counter-container {
+    margin-top: 20px;
+      
 }
-
